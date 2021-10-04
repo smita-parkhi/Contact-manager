@@ -1,0 +1,58 @@
+@mixin info-button {
+    border-color: cornflowerblue;
+    color: cornflowerblue;
+    font-family: OpenSansSemiBold;
+}
+
+.home-wrapper{
+    .contact-list-wrapper{
+        margin: 36px auto;
+    }
+    .tool-bar-wrapper{
+        margin: 36px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .contact-type-select{
+            width: 200px;
+        }
+        .add-contact-button{
+            padding: 14px 36px;
+            @include info-button;
+        }
+    }
+}
+
+.contact-dialog{
+    min-width: 600px;
+    .dialog-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .close-icon{
+            cursor: pointer;
+            padding: 16px 24px;
+        }
+    }
+    .contact-form{
+        padding: 16px 24px;
+        .field-row{
+            width: 100%;
+            padding: 16px 0px;
+        }
+    }
+    .dialog-footer{
+        display: flex;
+        justify-content: flex-end;
+        padding: 0px 24px 32px 24px;
+        .cancel-button{
+            padding: 8px 36px;
+            margin-right: 24px;
+            border-color: coral;
+            color: coral;
+        }
+        .submit-button{
+            @include info-button;
+        }
+    }
+}
