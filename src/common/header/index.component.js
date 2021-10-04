@@ -8,7 +8,7 @@ export default function Header() {
       <AppBar position="static" className="app-header">
         <Container className="header-container">
           <Typography variant="h6" component="div" style={{fontFamily: "OpenSansBold"}}>
-            CONTACT LIST
+            CONTACT MANAGER
           </Typography>
         </Container>
       </AppBar>
